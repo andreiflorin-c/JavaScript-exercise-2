@@ -1,0 +1,44 @@
+:root{
+  --background-color: rgb(255, 255, 255);
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: var(--background-color);
+}
+
+blockquote {
+  font-size: 1.5em;
+  color: gray;
+  display: none;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.showAnswer {
+  display: block;
+  animation: fadeIn 1s;
+}
+
+h1 {
+  color: green;
+  cursor: pointer;
+  user-select: none;
+  transition: color 1s;
+}
+
+.opened {
+  color: yellowgreen;
+}
+
+h3 {
+  margin-top: 100px;
+}
